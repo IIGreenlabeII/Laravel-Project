@@ -1,0 +1,366 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family:  Helvetica, Arial, Sans-Serif;
+	font-size: 15px;
+	line-height: 21px;
+	color:#1D1D1B;
+	height: 100%;
+	/*background:#1D1D1B;*/
+}
+
+ul, li
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a
+{
+	color:#1D1D1B;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5
+{
+	padding:0;
+	margin:0;
+	line-height: normal;
+	font-weight: normal;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 15px;
+	padding-left: 13px;
+	line-height: 50px;
+}
+
+.errorMessage
+{
+	padding-left: 13px;
+}
+
+.errorLinks
+{
+	font-weight: bold;
+}
+
+.menuColor
+{
+	background-color: #ffffff !important;
+}
+li.headerColor a, .headerColor
+{
+	color: #ffffff !important;
+}
+.color1
+{
+	color: #00a19a !important;
+}
+.color2
+{
+	color: #d60b52 !important;
+}
+.color3
+{
+	color: #009fe3 !important;
+}
+.bgcolor1
+{
+	background-color: #00a19a !important;
+}
+.bgcolor2
+{
+	background-color: #d60b52 !important;
+}
+.bgcolor3
+{
+	background-color: #009fe3 !important;
+}
+.bgcolorActive
+{
+	background-color: #4a4a49 !important;
+}
+
+.clickable
+{
+	cursor:pointer;
+}
+
+.animate
+{
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: translate3d(0, 0, 0); /* Accelerate with 3d transitions  */
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+#loading
+{
+
+	position: absolute;
+	z-index: 1;
+	width:100%;
+	height:100%;
+	background:#1D1D1B;
+}
+#loading.hide
+{
+	opacity:0;
+
+}
+#loading .inner
+{
+	position: absolute;
+	margin:auto;
+	height:150px;
+	width:215px;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+#loading .text
+{
+	color:#FFF;
+	font-size: 32px;
+	line-height: 38px;
+}
+
+#app
+{
+	width: 100%;
+	height: 100%;
+}
+
+#app.active
+{
+	margin-top: 425px;
+}
+
+#menu
+{
+	padding-top: 20px;
+	margin-top: -425px;
+	position: absolute;
+	height: 405px;
+	width: 100%;
+	background: #1d1d1b;
+	color: #9d9d9c;
+	overflow: hidden;
+}
+
+#menu li
+{
+	padding-left: 16px;
+	height: 45px;
+	line-height: 45px;
+	overflow: hidden;
+}
+
+#menu li.bold
+{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#menu li a
+{
+	color: #9d9d9c;
+}
+#menu li.bold a
+{
+	color:#ffffff;
+}
+
+#menu li:hover
+{
+	background: #4a4a49;
+}
+
+#menu li#color1:hover
+{
+	background: #00a19a;
+}
+
+#menu li#color2:hover
+{
+	background: #d60b52;
+}
+
+#menu li#color3:hover
+{
+	background: #009fe3;
+}
+#menu li#color1:hover a, #menu li#color2:hover a,#menu li#color3:hover a
+{
+	color:#FFF;
+}
+
+#content
+{
+	width: 100%;
+	height: 100%;
+	background: url('../images/white_bg.png');
+}
+
+#header
+{
+	position: absolute;
+	z-index:2;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background: #ffffff;
+	color: #1d1d1b;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#header .menu
+{
+	position: absolute;
+	margin: 14px 0 0 16px;
+	height: 14px;
+	width: 23px;
+	border-top: 1px solid #1d1d1b;
+	border-bottom: 1px solid #1d1d1b;
+}
+#header .menuBorder
+{
+	border-top: 1px solid #ffffff !important;
+	border-bottom: 1px solid #ffffff !important;
+}
+
+#header .menu .line
+{
+	margin-top: 6px;
+	height: 1px;
+	width: 100%;
+	background: #1d1d1b;
+}
+
+#header .menu .lineMenu
+{
+	background: #ffffff;
+}
+
+#header .share
+{
+	position: absolute;
+	font-weight: normal;
+	right: 16px;
+	display: none;
+}
+
+.subheader
+{
+	height:45px;
+	width:100%;
+	background:#1D1D1B;
+}
+.subheader li
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float:left;
+	width:50%;
+	height:45px;
+	line-height: 45px;
+	font-size:13px;
+	text-align: center;
+}
+.subheader li.left
+{
+	width:33%;
+	padding-left:16px;
+	text-align: left;
+}
+.subheader li.middle
+{
+	width:34%;
+}
+.subheader li.right
+{
+	width:33%;
+	padding-right:16px;
+	text-align: right;
+}
+.subheader a
+{
+	color:#FFF;
+	opacity:0.5;
+}
+.subheader li.active a, .subheader li:active a
+{
+	opacity:1.0;
+}
+
+#pages
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 45px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.links
+{
+	height: 20px;
+}
+
+.developed_link
+{
+	padding-top: 3px;
+	float: right;
+	margin-right: 13px;
+	font-size: 11px;
+}
+
+.desktop
+{
+	padding-top: 3px;
+	float: left;
+	margin-left: 13px;
+	font-size: 12px;
+}
+
+.youtube
+{
+	display: block;
+	z-index: 0;
+}
+
+.playButton
+{
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	display: block;
+	margin:auto;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+.youtubeWrapper
+{
+	overflow:hidden;
+	position: relative;
+}
